@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+if [ -z "$NVM_DIR" ]; then
+  echo "Installing NVM, please open new window after completion"
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+  exit 1
+fi
+
+nvm install $(cat .nvmrc)
+
+nvm use

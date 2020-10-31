@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+mkdir -p build/ data
+
+echo "Log into website and get node download link. Enter now:"
+read download_link
+
+wget $download_link build/foundry.zip
+
+cd build
+unzip foundry.zip
