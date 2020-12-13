@@ -1,7 +1,3 @@
 #!/usr/bin/env zsh
 
-. ~/.nvm/nvm.sh
-. ~/.profile
-. ~/.bashrc
-
-nvm run node build/resources/app/main.js --dataPath=data/
+node build/resources/app/main.js --dataPath=data/
